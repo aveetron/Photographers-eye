@@ -1,0 +1,94 @@
+{% extends 'master.html' %}
+{% block content %}
+
+	<!-- start banner Area -->
+	<section class="banner-area">
+		<div class="container">
+			<div class="row fullscreen align-items-center justify-content-between">
+				<div class="col-lg-6 col-md-4 col-xs-6 banner-left">
+					<h6>This is me</h6>
+					
+					<h1>{{ personal.name }}</h1>
+					<p>
+						{{ personal.personal_details }}
+					</p>
+					<a href="portfolio.html" class="primary-btn text-uppercase">discover now</a>
+				</div>
+				<br>
+				<div class="col-lg-6 col-md-8 col-xs-6 banner-right ">
+					<img class="img-fluid" src="{{personal.profile_image.url}}" alt="personal image" style="background-repeat: no-repeat;">
+				</div>
+			</div>
+		</div>					
+	</section>
+	<!-- End banner Area -->
+	
+	<!-- Start services Area -->
+	<section class="services-area section-gap">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content  col-lg-7">
+					<div class="title text-center">
+						<h1 class="mb-10">My Offered Services</h1>
+						<p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+					</div>
+				</div>
+			</div>						
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<span class="lnr lnr-camera"></span>
+							<a href="{% url 'work' %}"><h4>Photography</h4></a>
+							<p>
+								
+							</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<span class="lnr lnr-diamond"></span>
+						<a href="#"><h4>Event Management</h4></a>
+						<p>
+							
+						</p>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6">
+					<div class="single-services">
+						<span class="lnr lnr-rocket"></span>
+						<a href="#"><h4>Graphic Design</h4></a>
+						<p>
+							
+						</p>
+					</div>				
+				</div>														
+			</div>
+		</div>	
+	</section>
+	<!-- End services Area -->	
+
+	<!-- Start fact Area -->
+	<section class="facts-area section-gap" id="facts-area">
+		<div class="container">				
+			<div class="row">
+				<div class="col-lg-3 col-md-6 single-fact">
+					<h1 class="counter">150</h1>
+					<p>Projects Completed</p>
+				</div>
+				<div class="col-lg-3 col-md-6 single-fact">
+					<h1 class="counter">26</h1>
+					<p>Happy Clients</p>
+				</div>
+				<div class="col-lg-3 col-md-6 single-fact">
+					<h1 class="counter">2239</h1>
+					<p>Cups of Coffee</p>
+				</div>	
+				<div class="col-lg-3 col-md-6 single-fact">
+					<h1 class="counter">435</h1>
+					<p>Real Professionals</p>
+				</div>												
+			</div>
+		</div>	
+	</section>
+{% endblock  %}

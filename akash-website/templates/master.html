@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="auther" content="Avee_chakrborty">
+	<!-- Meta Description -->
+	<meta name="description" content="Personal_website">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>AKASH DAS</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		<link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">				
+		<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">							
+		<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">				
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	</head>
+	<body>	
+		<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+				<a href="index.html"><h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AKASH</h3></a>
+				</div>
+				<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<!--there was a page for pricing :: add if needed -->					          					          		          
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</nav><!-- #nav-menu-container -->		    		
+			</div>
+		</div>
+		</header><!-- #header -->
+        {% block content %}
+        {% endblock  %}
+		<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h4>Contact</h4>
+							<p>Telephone -> 01620625649</p>
+							<p>Email -> dakash820@gmail.com</p>
+							<p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Akash das</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-6 social-widget">
+						<div class="single-footer-widget">
+							<h4>Follow Me</h4>
+							<p>Let us be social</p>
+							<div class="footer-social d-flex align-items-center">
+								<a href="https://www.facebook.com/sky.wind49"><i class="fa fa-facebook"></i></a>
+								
+								<a href="https://www.instagram.com/akashdasssss/?hl=en"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->		
+
+		<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>			
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>			
+		<script src="{% static 'js/easing.min.js' %}"></script>			
+		<script src="{% static 'js/hoverIntent.js' %}"></script>
+		<script src="{% static 'js/superfish.min.js' %}"></script>	
+		<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>	
+		<script src="{% static 'js/jquery.tabs.min.js' %}"></script>						
+		<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>	
+		<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>			
+		<script src="{% static 'js/waypoints.min.js' %}"></script>
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'js/simple-skillbar.js' %}"></script>							
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>							
+		<script src="{% static 'js/mail-script.js' %}"></script>	
+		<script src="{% static 'js/main.js' %}"></script>	
+	</body>
+</html>
